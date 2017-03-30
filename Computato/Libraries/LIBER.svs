@@ -1,0 +1,19 @@
+slavus LIBER:
+	
+	finis clamaLinea<verba v>:
+		clama<v> *
+		novaLinea<> *
+		^
+
+	finis clama<verba v>:
+		CONSOLE_OUTPUT v *
+		^
+		
+	finis novaLinea<>:
+		CONSOLE_ENDLINE *
+		^
+	
+	verba require<>:
+		redi CONSOLE_INPUT *
+		^
+^
