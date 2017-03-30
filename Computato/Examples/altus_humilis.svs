@@ -1,0 +1,43 @@
+utendum LIBER
+utendum RES_PASSIVA
+
+slavus OPERATOR:
+	
+	RES_PASSIVA pass *
+	
+	creandus OPERATOR<>:		
+		pass est novum RES_PASSIVA<> *
+		
+		LIBER~clamaLinea<|*****************************************|> *
+		LIBER~clamaLinea<|*             ALTUS-HUMILIS             *|> *
+		LIBER~clamaLinea<|*****************************************|> *
+
+		dum<$VERA>:
+			numerus r est pass~numPass<100> *
+			numerus conati est 0 *
+			
+			LIBER~novaLinea<> *
+			LIBER~clamaLinea<|-----------------------|> *
+			LIBER~clamaLinea<|    Ludum Initiatur    |> *
+			LIBER~clamaLinea<|-----------------------|> *
+		
+			dum<$VERA>:
+				conati est conati plus 1 *
+				numerus req est LIBER~require<> *
+			
+				si<req minor r>: LIBER~clamaLinea<|Altior!|> *^
+				si<req maior r>: LIBER~clamaLinea<|Humilior!|> *^
+				si<req sit r>: 
+					LIBER~clamaLinea<|Vinceris! Conati erant | plus conati> *
+					fuge *
+					^	
+				^
+			
+			LIBER~clamaLinea<|-----------------------|> *
+			LIBER~clamaLinea<|Iterum ludes? (i/n)|> *
+			verba res est LIBER~require<> *
+			si<res sit |n|>: fuge *^
+			^
+		^
+		
+^
