@@ -6,9 +6,6 @@ int main(int argc, char* argv[])
 {
 	std::string filename;
 
-	system("cls");
-	system("color F0");
-
 	if (argc > 1)
 	{
 		filename = argv[1];
@@ -16,12 +13,17 @@ int main(int argc, char* argv[])
 
 	if (filename != "")
 	{
+		system("cls");
+		system("color F0");
+
 		p = new Parser(filename);
 
 		p->run();
-	}
 
-	system("color 07");
+		//system("pause");
+
+		system("color 07");
+	}
 
 	delete p;
 
