@@ -2,13 +2,13 @@
 
 slavus LIBER:
 	
-	finis clamaLinea<verba v>:
-		clama<v> *
+	finis clamaLinea<quis a>:
+		clama<%a> *
 		novaLinea<> *
 		^
 
-	finis clama<verba v>:
-		CONSOLE_OUTPUT v *
+	finis clama<quis a>:
+		CONSOLE_OUTPUT %a *
 		^
 		
 	finis novaLinea<>:
