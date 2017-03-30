@@ -1,0 +1,35 @@
+#Demonstration of Arrays
+
+utendum LIBER
+
+slavus OPERATOR:
+	creandus OPERATOR<>:
+		gamma<4 & 4> vg verba *
+		vg<0 & 0> est |R| *
+		vg<1 & 0> est |O| *
+		vg<2 & 0> est |M| *
+		vg<3 & 0> est |A| *
+		
+		vg<0 & 1> est |O| *
+		vg<1 & 1> est |L| *
+		vg<2 & 1> est |I| *
+		vg<3 & 1> est |M| *
+		
+		vg<0 & 2> est |M| *
+		vg<1 & 2> est |I| *
+		vg<2 & 2> est |L| *
+		vg<3 & 2> est |O| *
+		
+		vg<0 & 3> est |A| *
+		vg<1 & 3> est |M| *
+		vg<2 & 3> est |O| *
+		vg<3 & 3> est |R| *
+		
+		inter<numerus i est 0 & i minor 4 & i adde 1>:
+			inter<numerus j est 0 & j minor 4 & j adde 1>:
+				LIBER~clama<vg<i & j> plus | |> *
+			^
+			LIBER~novaLinea<> *
+		^
+	^
+^
