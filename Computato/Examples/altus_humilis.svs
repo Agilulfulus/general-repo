@@ -1,5 +1,3 @@
-#Classic Game of HiLo but in Latin
-
 utendum LIBER
 utendum RES_PASSIVA
 
@@ -25,12 +23,12 @@ slavus OPERATOR:
 		
 			dum<$VERA>:
 				conati est conati plus 1 *
-				numerus req est LIBER~require<> *
+				numerus req est =LIBER~require<> *
 			
 				si<req minor r>: LIBER~clamaLinea<|Altior!|> *^
 				si<req maior r>: LIBER~clamaLinea<|Humilior!|> *^
-				si<req sit r>: 
-					LIBER~clamaLinea<|Vinceris! Conati erant | plus conati> *
+				si<req sit r>:
+					LIBER~clamaLinea<|Vinceris! Conati erant | plus %conati> *
 					fuge *
 					^	
 				^
