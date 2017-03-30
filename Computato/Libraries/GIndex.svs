@@ -1,0 +1,56 @@
+species GIndex<?G>:
+
+	gamma fib *
+	numerus m *
+	
+	finis dele<numerus n>:
+		gamma<m minus 1> antifib ?G *
+		
+		inter<numerus i est 0 & i minor m & i adde 1>:
+			si<i minor n>: antifib<i> est fib<i> *^
+			si<i maior n>: antifib<i minus 1> est fib<i> *^
+			^
+		fib est antifib *
+		m strahe 1 *
+		^
+	
+	finis cumula<?G n>:
+		numerus x est m *
+		
+		gamma<x> antifib ?G *
+		antifib est fib *
+		
+		gamma<x plus 1> fib ?G *
+		
+		inter<numerus i est 0 & i minor m & i adde 1>:
+			fib<i> est antifib<i> *
+			^
+			
+		m adde 1 *
+		fib<x> est n *
+		^
+		
+	?G da<numerus n>:
+		si<n minor m>:
+			redi fib<n> *
+			^
+			
+		redi -1 *
+		^
+		
+	numerus daMag<>:
+		redi m *
+		^
+		
+	verba daVerba<>:
+		verba v est |{ | *
+		
+		inter<numerus i est 0 & i minor m & i adde 1>:
+			v est v plus %fib<i> plus | | *
+			^
+			
+		v est v plus |}| *
+			
+		redi v *
+		^
+^
