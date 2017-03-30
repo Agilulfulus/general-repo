@@ -1,0 +1,25 @@
+utendum LIBER
+
+#FIBONACCI SEQUENCER - OUTPUTS THE FIRST 10
+
+slavus OPERATOR:
+		
+	creandus OPERATOR<>:
+		gamma<10> fib numerus *
+		
+		#The @ symbol asks for the length/size of an object
+		#Can be used on gammas or strings natively
+		inter<numerus i est 0 & i minor @fib & i adde 1>:
+			si<i maior 1>:
+				fib<i> est fib<i minus 1> plus fib<i minus 2> *
+				^
+			si<i minor 2>:
+				fib<i> est 1 *
+				^
+			#The % symbol dictates that we want the number as a string
+			#Inverse of % is = which asks for the string as a number
+			LIBER~clama<%fib<i> plus | |> *
+			^
+		LIBER~novaLinea<> *
+		^
+	^
