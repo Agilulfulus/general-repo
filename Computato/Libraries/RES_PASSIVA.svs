@@ -1,0 +1,10 @@
+slavus RES_PASSIVA:
+
+	creandus RES_PASSIVA<>:
+		SET_RAND_SEED*
+		^
+	numerus numPass<numerus m>:
+		numerus x est GET_RAW_RANDOM *
+		redi x mod m *
+		^
+^
